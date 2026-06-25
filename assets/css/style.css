@@ -1,0 +1,280 @@
+/* Variáveis (Paleta) */
+:root {
+  --bg-main: #F3F1E6;
+  --text-main: #5E331A;
+  --primary: #B36A3E;
+  --secondary: #6E7F5C;
+  --accent: #9DAA7A;
+}
+
+/* Gerais */
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: 'Lato', Verdana, Arial, sans-serif;
+  padding-top: 90px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Empurar footer para o fundo da página no caso da página ter pouco conteúdo */
+html, body {
+    height: 100%;
+}
+main {
+    flex: 1;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+.menu_navegacao .nav-link {
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+h1, h2 {
+  color: var(--primary);
+}
+
+h3 {
+  color: var(--text-main);
+}
+
+
+/*Botões*/
+
+/* Atualizações */
+.btn_update{
+  background-color: var(--secondary);
+  color: var(--bg-main);
+  border: 3px solid var(--secondary);
+  border-radius: 10px;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.btn_update:hover {
+  background-color: var(--bg-main);
+  color: var(--secondary);
+  border: 3px solid var(--secondary);
+}
+
+/* Dashboard */
+.btn_update_dashboard {
+  background-color: var(--accent);
+  border: 3px solid var(--accent);
+  transition: all 0.3s ease;
+}
+
+.btn_update_dashboard:hover {
+  background-color: var(--bg-main);
+  color: var(--accent);
+  border: 3px solid var(--accent);
+}
+
+.btn_detalhes {
+  background-color: var(--primary);
+  color: var(--bg-main);
+  border: 3px solid var(--bg-main);
+}
+
+.btn_detalhes:hover {
+  background-color: var(--bg-main);
+  color: var(--primary);
+  border: 3px solid var(--primary);
+}
+
+/* principal CTA */
+.btn_finish {
+  background-color: var(--primary);
+  color: var(--bg-main);
+  border: 3px solid var(--primary);
+  border-radius: 10px;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.btn_finish:hover {
+  background-color: var(--bg-main);
+  color: var(--primary);
+  border: 3px solid var(--primary)
+}
+
+/* Menu de navegação */
+.menu_navegacao {
+  background-color: var(--secondary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.logotipo {
+  max-width: 150px;
+}
+
+.menu_navegacao .nav-link {
+    color: var(--bg-main);
+    
+}
+
+.menu_navegacao .nav-link:hover {
+    color: var(--text-main);
+}
+
+
+/* footer */
+.rodape {
+  background-color: var(--secondary);
+  color: var(--bg-main);
+}
+
+
+/* Cards */
+.produto-card {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  border-color: var(--accent);
+  border-radius: 12px;
+  overflow: hidden; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.produto-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.produto-card .card-img-top {
+    width: 100%;
+    height: 550px;     
+    object-fit: cover;
+}
+
+/* Cards formulários/resumos */
+.ui_card {
+  padding: 30px;
+  background-color: var(--bg-main);
+  border-radius: 16px;
+  border: 2px solid var(--accent);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.ui_card p {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--text-main);
+}
+
+.js_total {
+  color: var(--primary);
+}
+
+.ui_card p span {
+  color: var(--primary);
+}
+
+/* Resumo - carrinho */
+.ui_card .cart-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.ui_card .cart-total {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+
+/* Tabs do Dashboard */
+.dashboard-tabs {
+    border-bottom: 2px solid var(--accent);
+}
+
+.dashboard-tabs .nav-link {
+    color: var(--text-main);
+    transition: all 0.3s ease;
+}
+
+.dashboard-tabs .nav-link:hover {
+    background-color: var(--accent);
+    color: var(--bg-main);
+}
+
+.dashboard-tabs .nav-link.active {
+    background-color: var(--primary);
+    color: var(--bg-main);
+    border-color: var(--primary) var(--primary) transparent;
+}
+
+
+/* Formulários */
+.form_input {
+    border-color: color-mix(in srgb, var(--secondary) 30%, transparent);
+}
+
+.form_input:focus {
+  border-color: color-mix(in srgb, var(--secondary) 30%, transparent);
+  box-shadow: 0 0 0 0.25rem color-mix(in srgb, var(--secondary) 30%, transparent);
+ 
+}
+
+.table_wrap {
+  border-radius: 14px;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.table_wrap table {
+  margin-bottom: 0; 
+}
+
+.table_wrap th, .table_wrap td {
+  color: var(--text-main);
+  border-color: color-mix(in srgb, var(--secondary) 30%, transparent);
+}
+
+.table td, .table th {
+  white-space: nowrap;
+}
+
+.col_nome {
+  min-width: 220px; 
+}
+
+.col_accoes {
+  min-width: 220px;
+}
+
+
+/* media para imprimir referência da encomenda */
+@media print {
+
+  body {
+    padding-top: 0;
+    background: white;
+    color: black;
+  }
+
+  .menu_navegacao {
+    display: none;
+  }
+
+  .rodape {
+    display: none;
+  }
+
+  .btn {
+    display: none;
+  }
+
+  .ui_card {
+    box-shadow: none;
+    border: 2px solid black;
+  }
+}
