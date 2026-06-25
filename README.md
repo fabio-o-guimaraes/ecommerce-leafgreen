@@ -2,6 +2,26 @@
 
 Final course project demonstrating full-stack web development skills.
 
+
+## Screenshots
+
+### Home Page
+
+![Home](screenshots/index.JPG)
+
+### Shopping Cart
+
+![Cart](screenshots/cart.JPG)
+
+### Login Page
+
+![Login](screenshots/login.JPG)
+
+### Admin Dashboard
+
+![Admin Dashboard](screenshots/admin_dashboard.JPG)
+
+
 ## Technologies
 
 - HTML5
